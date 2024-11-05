@@ -1,5 +1,5 @@
 <template>
-    <p class="content" :class="props.customClass">
+    <p class="text-[1.5rem] leading-[1.6] text-gray-700" :class="props.customClass">
         <slot />
     </p>
 </template>
@@ -14,12 +14,3 @@ const props = defineProps({
     },
 })
 </script>
-
-<style scoped>
-.content {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 1rem;
-}
-</style>

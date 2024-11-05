@@ -1,5 +1,5 @@
 <template>
-    <h2 class="title" :class="props.customClass">
+    <h2 class="text-2xl font-bold text-gray-800" :class="props.customClass">
         <slot />
     </h2>
 </template>
@@ -14,12 +14,3 @@ const props = defineProps({
     },
 })
 </script>
-
-<style scoped>
-.title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 1rem;
-}
-</style>
