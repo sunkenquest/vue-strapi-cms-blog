@@ -9,6 +9,7 @@
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  justify-items: center;
 }
 
 a,
@@ -33,6 +34,7 @@ a,
 
   #app {
     display: grid;
+    justify-items: center;
     padding: 0 2rem;
   }
 }

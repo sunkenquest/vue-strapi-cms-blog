@@ -1,5 +1,5 @@
 <template>
-    <p class="text-[1.5rem] leading-[1.6] text-gray-700" :class="props.customClass">
+    <p class="text-[1.4rem] leading-[1.6] text-gray-700" :class="props.customClass">
         <slot />
     </p>
 </template>
