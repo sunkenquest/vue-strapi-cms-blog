@@ -1,5 +1,6 @@
 <template>
-    <figure class="bg-slate-100 p-8 w-[50rem] h-[20rem] m-4">
+    <figure
+        class="bg-slate-100 p-8 w-full sm:w-[30rem] md:w-[40rem] lg:w-[50rem] h-[20rem] m-4 shadow-[0_4px_6px_rgba(255,255,255,0.4)]">
         <figcaption class="text-center font-medium space-y-2">
             <span class="text-sky-500 dark:text-sky-400">
                 <BlogDateAtom :date="props.date" />
