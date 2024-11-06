@@ -3,31 +3,13 @@ import { ref } from 'vue'
 import BlogContainerMolecule from '@/components/molecules/BlogContainerMolecule.vue'
 
 const posts = ref([
-    { id: 1, title: 'First Blog Post', excerpt: 'This is the excerpt for the first blog post.', date: '2023-10-21' },
-    { id: 2, title: 'Second Blog Post', excerpt: 'This is the excerpt for the second blog post.', date: '2023-10-22' },
-    { id: 3, title: 'Third Blog Post', excerpt: 'This is the excerpt for the third blog post.', date: '2023-10-23' },
+    { id: 1, title: 'First Blog Post', excerpt: 'Aute commodo duis elit pariatur laborum laboris eu fugiat. Aute ad aute mollit voluptate consectetur cupidatat in reprehenderit quis consequat eu dolor amet sit. Eiusmod velit dolore Lorem et commodo ipsum aute tempor officia.', date: '2023-10-21' },
+    { id: 2, title: 'Second Blog Post', excerpt: 'Eiusmod consectetur quis est consequat laborum quis eiusmod culpa. Adipisicing cillum labore consequat enim veniam occaecat ad occaecat deserunt. Ex reprehenderit aute labore laborum mollit deserunt ipsum mollit.', date: '2023-10-22' },
+    { id: 3, title: 'Third Blog Post', excerpt: 'Dolor ea veniam consectetur est cillum commodo esse occaecat velit pariatur quis velit. Reprehenderit sit irure culpa in officia aute tempor ex excepteur nostrud nisi consectetur cupidatat nostrud. Sint aliqua ullamco Lorem reprehenderit reprehenderit deserunt occaecat deserunt ullamco commodo qui et nisi labore..', date: '2023-10-23' },
 ])
 </script>
 
 <template>
-    <div class="blog-page">
-        <div class="blog-posts">
-            <BlogContainerMolecule v-for="post in posts" :key="post.id" :title="post.title" :date="post.date"
-                :content="post.excerpt" />
-        </div>
-    </div>
+    <BlogContainerMolecule v-for="post in posts" :key="post.id" :title="post.title" :date="post.date"
+        :content="post.excerpt" />
 </template>
-
-<style scoped>
-.blog-page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.blog-posts {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-</style>
