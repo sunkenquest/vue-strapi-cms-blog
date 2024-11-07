@@ -3,7 +3,7 @@
         <BlogHeaderHeroAtom :imageUrl="props.imageUrl" :alt="props.alt" />
         <BlogHeaderTitleAtom :title="props.title" />
         <div class="pt-5 pb-0">
-            <BlogHeaderBioAtom :text="props.text" />
+            <BlogHeaderBioAtom :text="props.bio" />
         </div>
     </div>
 </template>
@@ -27,7 +27,7 @@ const props = defineProps({
         type: String,
         required: true
     },
-    text: {
+    bio: {
         type: String,
         required: true
     }
