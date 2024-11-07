@@ -1,5 +1,6 @@
 <template>
     <BlogHeaderMolecule :imageUrl="profile.imageUrl" :alt="profile.alt" :title="profile.title" :text="profile.text" />
+    <BlogNewsLetterMolecule />
     <BlogContainerMolecule v-for="post in posts" :key="post.id" :title="post.title" :date="post.date"
         :content="post.excerpt" />
 </template>
@@ -8,6 +9,7 @@
 import { ref } from 'vue'
 import BlogContainerMolecule from '@/components/molecules/BlogContainerMolecule.vue'
 import BlogHeaderMolecule from '@/components/molecules/BlogHeaderMolecule.vue'
+import BlogNewsLetterMolecule from '@/components/molecules/BlogNewsLetterMolecule.vue'
 
 const posts = ref([
     { id: 1, title: 'First Blog Post', excerpt: 'Aute commodo duis elit pariatur laborum laboris eu fugiat. Aute ad aute mollit voluptate consectetur cupidatat in reprehenderit quis consequat eu dolor amet sit. Eiusmod velit dolore Lorem et commodo ipsum aute tempor officia.', date: '2023-10-21' },

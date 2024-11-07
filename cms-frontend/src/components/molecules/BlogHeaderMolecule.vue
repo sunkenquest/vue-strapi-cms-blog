@@ -2,7 +2,7 @@
     <div class="my-10 flex flex-col items-center space-y-1 sm:w-[30rem] md:w-[40rem] lg:w-[50rem]">
         <BlogHeaderHeroAtom :imageUrl="props.imageUrl" :alt="props.alt" />
         <BlogHeaderTitleAtom :title="props.title" />
-        <div class="py-5">
+        <div class="pt-5 pb-0">
             <BlogHeaderBioAtom :text="props.text" />
         </div>
     </div>
