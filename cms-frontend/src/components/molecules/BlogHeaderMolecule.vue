@@ -1,6 +1,6 @@
 <template>
     <div class="my-10 flex flex-col items-center space-y-1 sm:w-[30rem] md:w-[40rem] lg:w-[50rem]">
-        <BlogHeaderHeroAtom :imageUrl="props.imageUrl" :alt="props.alt" />
+        <BlogHeaderHeroAtom :imageUrl="props.imageUrl" alt="hero image" />
         <BlogHeaderTitleAtom :title="props.title" />
         <div class="pt-5 pb-0">
             <BlogHeaderBioAtom :text="props.bio" />
@@ -16,10 +16,6 @@ import BlogHeaderTitleAtom from '../atoms/BlogHeaderTitleAtom.vue';
 
 const props = defineProps({
     imageUrl: {
-        type: String,
-        required: true
-    },
-    alt: {
         type: String,
         required: true
     },

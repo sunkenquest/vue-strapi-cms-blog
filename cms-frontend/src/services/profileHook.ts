@@ -6,7 +6,6 @@ export async function fetchProfile(): Promise<BlogProfile | null> {
         const response = await axios.get('http://localhost:1337/api/profiles');
         const profileData = response.data.data[0];
         return {
-            documentId: profileData.documentId,
             title: profileData.title,
             bio: profileData.bio,
         };
