@@ -1,0 +1,2 @@
+# Headless CMS Microblog with Strapi and Vue (TypeScript)
+<p> This project implements a microblogging platform using Strapi as a headless CMS, paired with a Vue.js frontend built in TypeScript. Strapi provides a flexible, customizable backend, handling all content management tasks, while the Vue.js frontend fetches and displays the microblog data dynamically.</p>
